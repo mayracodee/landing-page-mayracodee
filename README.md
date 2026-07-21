@@ -43,14 +43,11 @@ Durante o desenvolvimento deste portfólio, trabalhei conceitos como:
 - Responsividade e Media Queries.
 - Componentização visual de cards e seções.
 - Hierarquia visual e organização de conteúdo.
-- Interações utilizando JavaScript.
 - Desenvolvimento de uma identidade visual consistente.
 
-## 🚀 Projeto online
+## 🔗 Projeto Online
 
-O projeto está disponível online:
-
-**[Visualizar Portfólio](COLOCAR-LINK-DA-VERCEL-AQUI)**
+https://landing-page-mayracodee.vercel.app/
 
 ## 👩🏻‍💻 Desenvolvido por
 
