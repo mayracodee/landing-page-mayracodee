@@ -212,16 +212,13 @@
         align-self: center;
     }
 
-    @media (max-width: 768px) {
 
-        .project-card:active,
-        .service-card:active,
-        .investment-card:active {
+    .project-card:active,
+    .service-card:active,
+    .investment-card:active {
         transform: scale(.98);
         border-color: var(--primary);
     }
-
-}
 
 }
 
