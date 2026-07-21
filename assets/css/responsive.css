@@ -1,0 +1,254 @@
+/*============= TABLET ===============*/
+
+@media (max-width: 992px) {
+
+    /*========== HERO ==========*/
+
+    .hero {
+        padding: 64px 48px;
+    }
+
+    .hero-content {
+        flex: 1.2;
+    }
+
+    .hero-logo {
+        flex: 0.8;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-logo img {
+        width: 300px;
+    }
+
+    /*========== SERVICES ==========*/
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*========== CONTACT ==========*/
+
+    .contact {
+        padding: 64px 48px;
+    }
+
+    .contact-container {
+        gap: 48px;
+    }
+
+    .contact-info,
+    .contact-links {
+        flex: 1;
+    }
+
+}
+
+
+/*============ MOBILE ================*/
+
+@media (max-width: 768px) {
+
+    /*========== HERO ==========*/
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        padding: 64px 24px;
+    }
+
+    .hero-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    .hero-logo img{
+        width: 200px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+        max-width:300px;
+    }
+
+    /*========== ABOUT ==========*/
+
+    .approach {
+        flex-direction: column;
+        gap: 48px;
+        padding: 32px 24px 64px;
+    }
+
+    .approach-content {
+        text-align: center;
+    }
+
+    .approach-cards {
+        width: 100%;
+    }
+
+    /*========== PROJECTS ==========*/
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap:24px;
+    }
+
+    .projects {
+        padding: 64px 24px;
+    }
+
+    .projects-content h3 {
+        font-size: 2rem;
+    }
+
+    .projects-content {
+        margin: 0 auto 40px;
+    }
+
+    .project-info {
+        padding: 24px;
+    }
+
+    
+    /*========== SERVICES ==========*/
+
+    .services {
+        padding: 64px 24px;
+    }
+
+    .services-content {
+        margin: 0 auto 40px;
+    }
+
+    .services-content h3 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /*========== INVESTMENT ==========*/
+
+    .investment {
+        padding: 64px 24px;
+    }
+
+    .investment-content h3 {
+        font-size: 2rem;
+    }
+
+    .investment-content {
+        margin: 0 auto 40px;
+    }
+
+    .investment-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /*========== MAINTENANCE ==========*/
+
+    .maintenance {
+        padding: 24px;
+    }
+
+    .maintenance-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .maintenance-item-content {
+        width: 100%;
+    }
+
+    .maintenance-item strong {
+        align-self: flex-start;
+    }
+
+
+    /*========== CONTACT ==========*/
+
+    .contact {
+        padding: 64px 24px;
+    }
+
+    .contact-content h3 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-links {
+        width: 100%;
+    }
+
+    .contact-button {
+        align-self: center;
+    }
+
+}
+
+
+/*========== MOBILE PEQUENO ============*/
+
+@media (max-width: 480px) {
+
+    /*========== PROJECTS ==========*/
+
+    .projects-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    /*========== SERVICES ==========*/
+
+    .services-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .service-card {
+        padding: 24px;
+    }
+
+    /*========== INVESTMENT ==========*/
+
+    .investment-content h3{
+        font-size: 1.75rem;
+    }
+
+    /*========== CONTACT ==========*/
+
+    .contact-content h3{
+        font-size: 1.75rem;
+    }
+
+}

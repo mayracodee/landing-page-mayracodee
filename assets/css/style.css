@@ -1,0 +1,921 @@
+/* ======== GLOBAL ========*/
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+}
+
+/*========= HEADER ========*/
+
+/*======== HERO =========*/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/*---------- TEXTO -----------*/
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content span {
+    color: var(--primary);
+}
+
+.hero-content h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+/*---------- BOTÃO -----------*/
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+}
+
+/*---------- LOGO -----------*/
+
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo img {
+    width: 380px;
+    animation: logoEntrance 1s ease, glow 8s ease-in-out infinite;
+}
+
+/*---------- ANIMAÇÃO -----------*/
+
+@keyframes logoEntrance {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+
+    0% {
+         filter: drop-shadow(0 0 8px rgba(139, 92, 246, .15));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 18px rgba(139, 92, 246, .35));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 8px rgba(139, 92, 246, .15));
+    }
+
+}
+
+/*=========== MAIN ===========*/
+
+/*========= ABORDAGEM ===========*/
+
+.approach {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+/*---------- TEXTO -----------*/
+
+.approach-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*---------- CARDS -----------*/
+
+.approach-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.approach-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform .3s ease, border .3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+.approach-card svg {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+.approach-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.approach-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/*=========== PROJETOS =========*/
+
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/*---------- TEXTO -----------*/
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+
+.projects-content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.projects-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+/*---------- CARDS -----------*/
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+/*---------- IMAGEM -----------*/
+
+.project-image {
+    height: 300px;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*---------- MOCKUP DESKTOP -----------*/
+
+.browser-mockup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.browser-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.browser-header span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #374151;
+}
+
+.browser-mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*---------- MOCKUP CELULAR -----------*/
+
+.phone-preview {
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 2px solid rgba(255,255,255,.08);
+}
+
+.phone-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.dynamic-island {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 6px;
+    background-color: #2f3440;
+    border-radius: 999px;
+    z-index: 2;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px;
+    flex: 1;
+}
+
+.project-badge {
+    align-self: flex-start;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba(139, 92, 246, .12);
+    border: 1px solid rgba(139, 92, 246, .25);
+    color: var(--primary);
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.project-badge--personal {
+    background-color: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    color: var(--primary);
+}
+
+.project-badge--study {
+    background-color: rgba(79, 125, 255, 0.12);
+    border: 1px solid rgba(79, 125, 255, 0.25);
+    color: var(--secondary);
+}
+
+.project-badge--client {
+    background-color: rgba(52, 211, 153, 0.12);
+    border: 1px solid rgba(52, 211, 153, 0.25);
+    color: #34D399;
+}
+
+/*---------- TEXTO CARD -----------*/
+
+.project-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+}
+
+.project-info p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px 36px 0;
+}
+
+.stack-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--text-light);
+    font-size:.9rem;
+    transition:color .3s ease;
+}
+
+.stack-item svg{
+    width:18px;
+    height:18px;
+}
+
+.project-card:hover .stack-item{
+    color:var(--primary);
+}
+
+.project-stack span {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+/*---------- BOTÃO CARD -----------*/
+
+.project-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 36px 36px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.project-button:hover {
+    color: var(--secondary);
+}
+
+.project-button span:last-child {
+    transition: transform .3s ease;
+}
+
+.project-button:hover span:last-child {
+    transform: translateX(4px);
+}
+
+
+
+
+/*========= SERVIÇOS ==========*/
+
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/*---------- TEXTO -----------*/
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 700px;
+}
+
+/*---------- CARDS -----------*/
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+.service-card svg {
+    width: 32px;
+    height: 32px;
+    color: var(--primary);
+}
+
+.service-card h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.service-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.service-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    margin-top: 16px;
+}
+
+.service-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.check {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/*========= INVESTIMENTO ==========*/
+
+.investment {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/*---------- TEXTO -----------*/
+
+.investment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 700px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+
+.investment-content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.investment-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.investment-content p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/*---------- CARDS -----------*/
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.investment-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.investment-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+/*---------- TITULO DO CARD -----------*/
+
+.investment-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+/*---------- PREÇO DO CARD -----------*/
+
+.investment-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+/*---------- DESCRIÇÃO DO CARD -----------*/
+
+.investment-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+/*---------- PRAZO -----------*/
+
+.investment-deadline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    margin-bottom: 28px;
+}
+
+.investment-deadline svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.investment-deadline p {
+    margin: 0;
+    color: var(--text-light);
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+/*---------- BOTÃO -----------*/
+
+.investment-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color .3s ease;
+}
+
+.investment-button:hover {
+    color: var(--secondary);
+}
+
+.investment-button span:last-child {
+    transition: transform .3s ease;
+}
+
+.investment-button:hover span:last-child {
+    transform: translateX(4px);
+}
+
+/*---------- MANUTENÇÃO -----------*/
+
+.maintenance {
+    max-width: 800px;
+    margin: 80px auto 40px;
+    padding: 40px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*---------- TEXTO MANUTENÇÃO -----------*/
+
+.maintenance h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.maintenance p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.maintenance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.maintenance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.maintenance-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.maintenance-item span {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.maintenance-item strong {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.maintenance-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.maintenance-item-content span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.maintenance-item-content p {
+    font-size: .95rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/*---------- INFORMAÇÕES -----------*/
+
+.investment-info {
+    max-width: 800px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.investment-info p {
+    color: var(--text-light);
+    font-size: .95rem;
+    line-height: 1.8;
+}
+
+.investment-info strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+/*---------- CONTATO -----------*/
+
+.contact {
+    padding: 120px 0;
+}
+
+/*---------- TÍTULO ----------*/
+
+.contact-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h2 {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-content h3 {
+    margin: 24px 0;
+    color: var(--text);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.contact-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+/*---------- CONTEÚDO ----------*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 120px;
+    margin-top: 96px;
+}
+
+/*---------- TEXTO ----------*/
+
+.contact-info {
+    width: 42%;
+    padding-right: 40px;
+}
+
+.contact-info p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+/*---------- LINKS ----------*/
+
+.contact-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    gap: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-item svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--primary);
+    margin-top: 4px;
+}
+
+
+
+.contact-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-item h4 {
+    color: var(--text);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.contact-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/*---------- BOTÃO ----------*/
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 16px 32px;
+    margin-top: -12px;
+    background-color: var(--primary);
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color .3s ease, transform .3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+
