@@ -44,7 +44,6 @@ Durante o desenvolvimento deste portfólio, trabalhei conceitos como:
 - Componentização visual de cards e seções.
 - Hierarquia visual e organização de conteúdo.
 - Desenvolvimento de uma identidade visual consistente.
-- Interatividade com JavaScript (Intersection Observer e manipulação de classes para animações de entrada).
 
 ## 🔗 Projeto Online
 

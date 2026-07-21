@@ -918,27 +918,4 @@ body {
     transform: translateY(-2px);
 }
 
-/* ============================
-   Scroll Reveal Animation
-============================ */
-
-.about,
-.projects,
-.services,
-.investment,
-.contact {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity .7s ease, transform .7s ease;
-}
-
-.about.show,
-.projects.show,
-.services.show,
-.investment.show,
-.contact.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 
