@@ -104,11 +104,6 @@
 
     /*========== PROJECTS ==========*/
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap:24px;
-    }
-
     .projects {
         padding: 64px 24px;
     }
@@ -119,6 +114,15 @@
 
     .projects-content {
         margin: 0 auto 40px;
+    }
+
+    .projects-grid {
+        gap: 24px;
+        padding: 1rem 0;
+    }
+    
+    .project-card {
+        flex: 0 0 85%;
     }
 
     .project-info {
@@ -231,6 +235,10 @@
 
     .projects-content h3 {
         font-size: 1.75rem;
+    }
+
+    .project-card {
+        flex: 0 0 95%;
     }
 
     .project-info {
