@@ -120,6 +120,10 @@
         gap: 24px;
         padding: 1rem 0;
     }
+
+    .projects-hint {
+        display: block;
+    }
     
     .project-card {
         flex: 0 0 85%;

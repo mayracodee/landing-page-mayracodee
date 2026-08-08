@@ -259,6 +259,28 @@ body {
     border-color: var(--primary);
 }
 
+.projects-hint {
+    display: none;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    animation: swipeHint 1.8s ease-in-out infinite;
+}
+
+@keyframes swipeHint {
+
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+}
+
 /*---------- IMAGEM -----------*/
 
 .project-image {
