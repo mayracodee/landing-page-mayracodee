@@ -118,7 +118,7 @@
 
     .projects-grid {
         gap: 24px;
-        padding: 1rem 0;
+        padding: 1rem 7.5%;
     }
 
     .projects-hint {
@@ -131,6 +131,11 @@
 
     .project-info {
         padding: 24px;
+    }
+
+    .project-card:hover {
+        transform: none;
+        border-color: var(--border);
     }
 
     
