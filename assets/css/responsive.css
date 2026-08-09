@@ -104,39 +104,58 @@
 
     /*========== PROJECTS ==========*/
 
-    .projects {
-        padding: 64px 24px;
-    }
-
-    .projects-content h3 {
-        font-size: 2rem;
-    }
-
-    .projects-content {
-        margin: 0 auto 40px;
-    }
-
-    .projects-grid {
-        gap: 24px;
-        padding: 1rem 7.5%;
-    }
-
-    .projects-hint {
-        display: block;
-    }
+        .projects {
+            padding: 64px 24px;
+        }
     
-    .project-card {
-        flex: 0 0 85%;
-    }
+        .projects-content {
+            margin: 0 auto 40px;
+        }
+    
+        .projects-content h3 {
+            font-size: 2rem;
+        }
+    
+        .projects-grid {
+            gap: 24px;
+            padding: 1rem 7.5%;
+        }
+    
+        .projects-hint {
+            display: block;
+        }
+    
+        .project-card {
+            flex: 0 0 85%;
+            height: 700px;
+        }
 
-    .project-info {
-        padding: 24px;
-    }
+        .project-button {
+            margin-top: auto;
+            margin-left: 20px;
+        }
+    
+        .project-info {
+            padding: 20px;
+        }
+    
+        .project-info h4 {
+            font-size: 1.5rem;
+        }
+    
+        .project-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    
+        .project-card:hover {
+            transform: none;
+            border-color: var(--border);
+        }
 
-    .project-card:hover {
-        transform: none;
-        border-color: var(--border);
-    }
+        .phone-preview {
+            width: 150px;
+        }
 
     
     /*========== SERVICES ==========*/
