@@ -236,10 +236,16 @@ body {
     scroll-snap-type: x mandatory;
     padding: 1.5rem 1rem 1rem;
     scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
 }
 
 .projects-grid::-webkit-scrollbar {
     display: none;
+}
+
+.projects-grid.is-dragging {
+    cursor: grabbing;
 }
 
 .project-card {
@@ -260,7 +266,7 @@ body {
 }
 
 .projects-hint {
-    display: none;
+    display: block;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 0.95rem;
@@ -287,6 +293,13 @@ body {
     display: block;
 }
 
+.project-image img,
+.browser-mockup img,
+.phone-preview img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 /*---------- MOCKUP DESKTOP -----------*/
 
 .browser-mockup {
@@ -294,7 +307,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--background);
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
     overflow: hidden;
 }
 
